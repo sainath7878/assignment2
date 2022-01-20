@@ -27,7 +27,7 @@ html{
     --BACKGROUND:#171717;
     --CARD-BACKGROUND:#a3a3a3;
     --PRIMARY:#e0f2fe;
-    --HOVER:#262626;
+    --HOVER:rgba(82, 80, 80, 0.397);
 }
 
 body{
