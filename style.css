@@ -1,7 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
-
 *{
     margin:0;
     padding:0;
@@ -119,7 +118,6 @@ margin:0.8rem;
 
 .card-horizontal-text{
     display: flex;
-
 }
 
 .card-horizontal-text img{
@@ -139,7 +137,6 @@ margin:0.8rem;
     color: var(--BACKGROUND);
     position: relative;
 }
-
 
 .badge{
     background-color: var(--BACKGROUND);
@@ -207,8 +204,6 @@ margin:0.8rem;
 .nav-pill{
     display: inline-block;
 }
-
-
 
 @media screen and (max-width:600px){
     html{
