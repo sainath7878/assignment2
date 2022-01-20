@@ -99,6 +99,7 @@ margin:0.8rem;
     padding:0.8rem;
     margin-right: 0.5rem;
     border-radius:0.8rem;
+    cursor: pointer;
 }
 
 .btn:hover{
