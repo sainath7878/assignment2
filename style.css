@@ -1,0 +1,174 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size:62.5%;
+}
+
+.heading{
+    color: var(--PRIMARY);
+    border-bottom: medium solid var(--PRIMARY);
+    border-radius: 0.3rem;
+    font-size: 4rem;
+    margin:0.5rem 0.5rem 1rem 0.5rem;
+    width: 100vw;
+}
+
+.main{
+    width:100vw;
+}
+
+:root{
+    --BACKGROUND:#171717;
+    --CARD-BACKGROUND:#a3a3a3;
+    --PRIMARY:#e0f2fe;
+    --HOVER:#262626;
+}
+
+body{
+    background: var(--BACKGROUND);
+    color:var(--PRIMARY);
+    font-family: 'Work Sans', sans-serif;
+    display:flex;
+    flex-wrap:wrap;
+    align-content:start;
+}
+
+.wrapper{
+    padding:0.6rem;
+    background: var(--PRIMARY);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:0.8rem;
+    width:100%
+}
+
+/* ---------Card------------ */
+
+.card{
+    background: var(--BACKGROUND);
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    gap:1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card-main h1,h2,p{
+padding: 0.5rem;
+margin:0.8rem;
+}
+
+.card-main h1{
+    font-size:1.8rem;
+}
+
+.card-main h2{
+    font-size: 1.5rem;
+}
+
+.card-main p{
+    font-size: 1.2rem;
+}
+
+.card-main:hover{
+    background-color: var(--HOVER);
+    border-radius: 0.8rem;
+}
+
+.card img{
+    width:100%;
+    height:12rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+
+.btn{
+    border:none;
+    background: var(--BACKGROUND);
+    color:var(--PRIMARY);
+    font-size: large;
+    padding:0.8rem;
+    margin-right: 0.5rem;
+    border-radius:0.8rem;
+}
+
+.btn:hover{
+    background: var(--HOVER);
+}
+
+
+.card-cta{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.cta-icons{
+    margin-left: auto;
+}
+
+.card-horizontal-text{
+    display: flex;
+
+}
+
+.card-horizontal-text img{
+    width:8rem;
+    height:8rem;
+    object-fit: cover;
+}
+
+/* -----Badge----------- */
+
+.wrapper-block{
+    display: block;
+}
+
+.badge-heading{
+    font-size: 2.5rem;
+    color: var(--BACKGROUND);
+    position: relative;
+}
+
+
+.badge{
+    background-color: var(--BACKGROUND);
+    color:var(--PRIMARY);
+    border-radius:1rem;
+    padding:0.5rem;
+    position: absolute;
+}
+
+.badge-sm{
+    font-size: 1rem;
+    top:-0.2rem;
+    left:auto;
+}
+
+.badge-lg{
+    font-size:2rem;
+    top:-1rem;
+    left:auto;
+}
+
+.badge-btn{
+    position: relative;
+}
+
+.badge-btn-l{
+    background-color: var(--CARD-BACKGROUND);
+    position: absolute;
+    top:-1rem;
+    left:-1rem;
+}
