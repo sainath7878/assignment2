@@ -14,8 +14,6 @@ html{
 
 .heading{
     color: var(--PRIMARY);
-    border-bottom: medium solid var(--PRIMARY);
-    border-radius: 0.3rem;
     font-size: 4rem;
     margin:0.5rem 0.5rem 1rem 0.5rem;
     width: 100vw;
@@ -172,3 +170,40 @@ margin:0.8rem;
     top:-1rem;
     left:-1rem;
 }
+
+/* -------header--------- */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background: var(--BACKGROUND);
+    border-radius:0.8rem;
+    padding:1.5rem;
+}
+
+.navbar-brand{
+    display: flex;
+}
+
+.navbar-hamburger{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-heading{
+    display: inline-block;
+    color:var(--PRIMARY);
+    font-size:3rem;
+    font-weight: 800;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-pill{
+    display: inline-block;
+}
+
