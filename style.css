@@ -2,114 +2,125 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
 
 *{
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
+:root{
+    --BACKGROUND-COLOR: #171717;
+    --SECONDAY-COLOR: #a3a3a3;
+    --PRIMARY-COLOR: #e0f2fe;
+    --HOVER-COLOR: rgba(82, 80, 80, 0.397);
+}
+
 html{
-    font-size:62.5%;
+    font-size: 62.5%;
 }
 
 .heading{
-    color: var(--PRIMARY);
+    color: var(--PRIMARY-COLOR);
     font-size: 4rem;
-    margin:0.5rem 0.5rem 1rem 0.5rem;
+    margin: 0.5rem 0.5rem 1rem 0.5rem;
     width: 100vw;
 }
 
 .main{
-    width:100vw;
-}
-
-:root{
-    --BACKGROUND:#171717;
-    --CARD-BACKGROUND:#a3a3a3;
-    --PRIMARY:#e0f2fe;
-    --HOVER:rgba(82, 80, 80, 0.397);
+    width: 100vw;
+    position: relative;
 }
 
 body{
-    background: var(--BACKGROUND);
-    color:var(--PRIMARY);
+    background: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
     font-family: 'Work Sans', sans-serif;
-    display:flex;
-    flex-wrap:wrap;
-    align-content:start;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
 }
 
 .wrapper{
-    padding:0.6rem;
-    background: var(--PRIMARY);
+    padding: 0.6rem;
+    background: var(--PRIMARY-COLOR);
     display: flex;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: space-around;
     align-items: center;
-    border-radius:0.8rem;
-    width:100%
+    border-radius: 0.8rem;
+    width: 100%
+}
+
+.wrapper-block{
+    display: block;
+}
+
+.wrapper-inline-block{
+    display: inline-block;
+}
+
+.btn{
+    border: none;
+    background: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
+    font-size: medium;
+    padding: 0.8rem;
+    margin-right: 0.5rem;
+    border-radius: 0.8rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: var(--HOVER-COLOR);
 }
 
 /* ---------Card------------ */
 
 .card{
-    background: var(--BACKGROUND);
+    background: var(--BACKGROUND-COLOR);
     display: flex;
     flex-direction: column;
     border-radius: 0.8rem;
     gap:1.4rem;
     margin-bottom: 1rem;
+    overflow: hidden;
 }
 
-.card-main h1,h2,p{
-padding: 0.5rem;
-margin:0.8rem;
+.card-main h1,
+h2,
+p{
+    padding: 0.5rem;
+    margin: 0.8rem;
 }
 
 .card-main h1{
-    font-size:1.8rem;
+    font-size: 2.5rem;
 }
 
 .card-main h2{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .card-main p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    max-width: fit-content;
 }
 
 .card-main:hover{
-    background-color: var(--HOVER);
-    border-radius: 0.8rem;
+    background-color: var(--HOVER-COLOR);
 }
 
 .card img{
-    width:100%;
-    height:12rem;
+    width: 100%;
+    height: 12rem;
     object-fit: cover;
-    border-radius: 0.8rem;
-}
-
-.btn{
-    border:none;
-    background: var(--BACKGROUND);
-    color:var(--PRIMARY);
-    font-size: large;
-    padding:0.8rem;
-    margin-right: 0.5rem;
-    border-radius:0.8rem;
-    cursor: pointer;
-}
-
-.btn:hover{
-    background: var(--HOVER);
 }
 
 
 .card-cta{
     display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
 }
 
 .cta-icons{
@@ -121,41 +132,45 @@ margin:0.8rem;
 }
 
 .card-horizontal-text img{
-    width:8rem;
-    height:8rem;
+    width: 8rem;
+    height: 8rem;
     object-fit: cover;
 }
 
 /* -----Badge----------- */
 
-.wrapper-block{
-    display: block;
-}
-
 .badge-heading{
     font-size: 2.5rem;
-    color: var(--BACKGROUND);
+    color: var(--BACKGROUND-COLOR);
     position: relative;
+    max-width: fit-content;
 }
 
 .badge{
-    background-color: var(--BACKGROUND);
-    color:var(--PRIMARY);
-    border-radius:1rem;
-    padding:0.5rem;
+    background-color: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
+    border-radius: 50%;
+    padding: 0.5rem;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .badge-sm{
     font-size: 1rem;
-    top:-0.2rem;
-    left:auto;
+    height: 2rem;
+    width: 2rem;
+    top: -0.2rem;
+    right: -1rem;
 }
 
 .badge-lg{
-    font-size:2rem;
-    top:-1rem;
-    left:auto;
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+    top: -0.8rem;
+    right: -2.2rem;
 }
 
 .badge-btn{
@@ -163,10 +178,10 @@ margin:0.8rem;
 }
 
 .badge-btn-l{
-    background-color: var(--CARD-BACKGROUND);
+    background-color: var(--SECONDAY-COLOR);
     position: absolute;
-    top:-1rem;
-    left:-1rem;
+    top: -1rem;
+    left: -1rem;
 }
 
 /* -------header--------- */
@@ -174,10 +189,10 @@ margin:0.8rem;
 .navbar{
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
-    background: var(--BACKGROUND);
-    border-radius:0.8rem;
-    padding:1.5rem;
+    align-items: center;
+    background: var(--BACKGROUND-COLOR);
+    border-radius: 0.8rem;
+    padding: 1.5rem;
 }
 
 .navbar-brand{
@@ -192,8 +207,8 @@ margin:0.8rem;
 
 .nav-heading{
     display: inline-block;
-    color:var(--PRIMARY);
-    font-size:3rem;
+    color: var(--PRIMARY-COLOR);
+    font-size: 3rem;
     font-weight: 800;
 }
 
@@ -205,6 +220,54 @@ margin:0.8rem;
     display: inline-block;
 }
 
+/* -------Chips--------- */
+
+.chips-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.chip{
+    background: var(--BACKGROUND-COLOR);
+    display: flex;
+    justify-content: center;
+    border-radius: 0.8rem;
+}
+
+.chip p{
+    font-size: large;
+}
+
+.chip button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* -----------snackbar---------- */
+
+.snackbar{
+    background: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
+    border-radius: 0.8rem;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 12px 1px var(--SECONDAY-COLOR);
+    
+}
+
+.snackbar p{
+    font-size: large;
+}
+
+.snackbar .btn:nth-of-type(1){
+    color: var(--SECONDAY-COLOR);
+}
+
+/* --------Responsiveness------------- */
 @media screen and (max-width:600px){
     html{
         font-size: 50%;
