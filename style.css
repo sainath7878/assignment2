@@ -334,7 +334,6 @@ p{
 }
 
 .drawer-btn{
-    padding: 0.8rem 0.8rem 0.8rem 0;
     width: 100%;
     display: flex;
     gap: 3rem;
@@ -344,6 +343,7 @@ p{
 .drawer-heading,
 .drawer-subtext{
     margin-bottom: 1.5rem;
+    padding-left: 0.8rem;
 }
 
 .drawer-heading{
@@ -354,7 +354,9 @@ p{
     font-size: large;
 }
 
-
+.drawer-active{
+    background: var(--SECONDAY-COLOR);
+}
 
 /* --------Responsiveness------------- */
 @media screen and (max-width:600px){
