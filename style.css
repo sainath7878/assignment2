@@ -103,7 +103,6 @@ p{
 
 .card-main p{
     font-size: 1.5rem;
-    max-width: fit-content;
 }
 
 .card-main:hover{
@@ -266,6 +265,96 @@ p{
 .snackbar .btn:nth-of-type(1){
     color: var(--SECONDAY-COLOR);
 }
+
+/* --------Dialog----------- */
+
+.dialog{
+    background: var(--BACKGROUND-COLOR);
+    border-radius: 0.8rem;
+    padding: 1rem;
+}
+
+.dialog h1, p{
+    color: var(--PRIMARY-COLOR);
+    margin-bottom: 1rem;
+}
+
+.dialog > h1{
+    font-size: xx-large;
+}
+
+.dialog > p{
+    font-size: medium;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 4rem;
+    
+}
+
+.dialog-buttons{
+    display: flex;
+    justify-content: end;
+}
+
+/* -----------Tabs---------- */
+
+.tab{
+    color: var(--BACKGROUND-COLOR);
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tab-pill{
+    margin: 1rem 0;
+    flex-basis: 200px;
+    padding: 0.5rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+.tab-pill:hover{
+    background: var(--HOVER-COLOR);
+}
+
+.tab-active{
+    border-bottom: 2px solid var(--BACKGROUND-COLOR);
+    background: var(--SECONDAY-COLOR);
+}
+
+/* ---------Drawer-------- */
+
+.drawer{
+    background: var(--BACKGROUND-COLOR);
+    color: var(--PRIMARY-COLOR);
+    padding: 1rem;
+    min-width: 25rem;
+    border-radius: 0.8rem;
+}
+
+.drawer-btn{
+    padding: 0.8rem 0.8rem 0.8rem 0;
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.drawer-heading,
+.drawer-subtext{
+    margin-bottom: 1.5rem;
+}
+
+.drawer-heading{
+    font-size: xx-large;
+}
+
+.drawer-subtext{
+    font-size: large;
+}
+
+
 
 /* --------Responsiveness------------- */
 @media screen and (max-width:600px){
